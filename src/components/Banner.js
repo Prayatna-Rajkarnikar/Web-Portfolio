@@ -3,6 +3,12 @@ import headerImg from "../assets/img/header-img.svg";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 
 export const Banner = () => {
+  const scrollToContact = () => {
+    const contactSection = document.getElementById("connect");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <section className="banner" id="home">
       <Container>
@@ -16,8 +22,8 @@ export const Banner = () => {
               talents to create innovative, user-friendly applications that
               improve user experiences across multiple platforms.
             </p>
-            <button onClick={() => console.log("connect")}>
-              Let’s Connect <ArrowRightCircle size={25} />
+            <button onClick={scrollToContact}>
+              Let's Connect <ArrowRightCircle size={25} />
             </button>
           </Col>
           <Col xs={12} md={6} xl={5}>
