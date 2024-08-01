@@ -35,9 +35,7 @@ export const Skills = () => {
           <Col>
             <div className="skill-box">
               <h2>Skills</h2>
-              <p>
-                Loremksdmk sndkjsjd jksjdknksd ksndksnd skjdkjsk jsdjks djjsd dj
-              </p>
+              <p>Following are the skills</p>
               <Carousel
                 responsive={responsive}
                 infinite={true}
